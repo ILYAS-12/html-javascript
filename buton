@@ -1,39 +1,44 @@
 <html>
 <head>
-<title>javascript ile buton<title>
+<title>buton</title>
 </head>    
 <body>
 
-<button onclick="tıkla()">tıkla</button>
+//burda buton yapmak için "button" kodunu kullanırız
+<button onclick="tikla()">tıkla</button>
 <button onclick="this.innerHTML = 'WELCOME'">yazı</button>
-<button onclick="tıkla2()">renk</button>
+<button onclick="tikla2()">renk</button>
 
+//"p"paragraf oluşturmaya yarar
 <h1><p id="para1">PARAGRAF!</p></h1>
 
-<button onmouseover="geliş()" onmouseout="gidiş()" >tıkla ateş</button>
+<button onmouseover="gelis()" onmouseout="gidis()" >tıkla ates</button>
 
+// "onmouseover" fare işaretçisinin butonun üzerine geldiğinde şunu yapısn demek
 <script>
 
-function tıkla(){
+//function fonksiyon annamına gelir
+//yazılan deyere kod atar
+function tikla(){
     alert("tıkladığın için bilgisiyara viris bulaştı")
-    alert("ahahhaahah")
 }
+//"alert" sayfada belirtilen yazıyı yazar
 
-function tıkla2(){
+function tikla2(){
     var elament = document.getElementById("para1")
     elament.style.color = "red"
 }
-
-function geliş(){
+//"document.getElementById" bu id al demektir
+function gelis(){
     var elament2 = document.getElementById("para1")
     elament2.innerHTML = ":)"
 }
 
-function gidiş(){
+function gidis(){
     var elament2 = document.getElementById("para1")
     elament2.innerHTML = ":("
 } 
-
+//"innerHTMl" seçilene yazıyı deyiştir demektir
 </script>
 
 </body>
