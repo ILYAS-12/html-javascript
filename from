@@ -1,0 +1,28 @@
+<html>
+<head>
+
+</head>
+<body>
+
+<form name="form1" action="" method="POST" onsubmit="return dogrula()">
+
+<input type="text" name="isim"/>
+<button type="submit">gönder</button>
+
+</form>
+
+<script>
+    function dogrula(){
+        var form = document.forms["form1"];
+        var deger = form["isim"].value;
+
+        if (deger == ""){
+            alert("alan boş bırakılamaz!");
+            return false;
+        }
+        return true;  
+    }
+</script>
+
+</body>
+</html>
