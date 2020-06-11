@@ -1,1 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
 
+</head>
+<body>
+ 
+    <script>
+       
+    //burda çalışan bilgilerini sisteme kayıt ettik 
+     var calisan = {
+         isim:"Murat",
+         soyisim:"Kapıcı",
+         numara:"755",
+         isimbilgileri:function(){
+         return "isim : " + this.isim + "soyisim : " + this.soyisim + "numara : " + this.numara
+         }  
+    
+    //"var" komutu bir deyişgen oluşturmaya yarar 
+    
+    }
+     console.log(çalışan.isim)
+     console.log(çalışan.soyisim)
+     console.log(çalışan.numara)
+     console.log(çalışan.isimbilgileri())
+    
+     //"consele.log" konsola yazdır demek
+     //yazılanı görmek için sayfaya sağ tıklıyarak inceleye basıp console kısmına tıklayın 
+    
+     function calisan2(isim2,soyisim2,numara2){
+         this.isim2 = isim2
+         this.soyisim2 = soyisim2
+         this.numara2 = numara2
+         this.bilgi = function(){
+             return "isim : " + this.isim2 + "\nsoyisim : " + this.soyisim2 + "\nnumara : " + this.numara2
+        //"retrun bize geri dönmesini sağlar"
+         
+         } 
+     
+     
+    //burda yeni çalışan ekledik 
+     }
+     var calisan3 = new calisan2("Ayşe","Kuşlu","552");
+     var calisan4 = new calisan2("Mehmet","Ölmez","781");
+     console.log(çalışan4.bilgi());
+     console.log(çalışan3.bilgi());
+     
+     </script>
+     
+</body>
+
+</html>
