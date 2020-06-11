@@ -1,0 +1,40 @@
+<html>
+<head>
+<title>javascript ile buton<title>
+</head>    
+<body>
+
+<button onclick="tıkla()">tıkla</button>
+<button onclick="this.innerHTML = 'WELCOME'">yazı</button>
+<button onclick="tıkla2()">renk</button>
+
+<h1><p id="para1">PARAGRAF!</p></h1>
+
+<button onmouseover="geliş()" onmouseout="gidiş()" >tıkla ateş</button>
+
+<script>
+
+function tıkla(){
+    alert("tıkladığın için bilgisiyara viris bulaştı")
+    alert("ahahhaahah")
+}
+
+function tıkla2(){
+    var elament = document.getElementById("para1")
+    elament.style.color = "red"
+}
+
+function geliş(){
+    var elament2 = document.getElementById("para1")
+    elament2.innerHTML = ":)"
+}
+
+function gidiş(){
+    var elament2 = document.getElementById("para1")
+    elament2.innerHTML = ":("
+} 
+
+</script>
+
+</body>
+</html>
