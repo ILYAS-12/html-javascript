@@ -1,0 +1,20 @@
+<html>
+<head>
+<title>toplama</title>    
+</head>    
+<body>
+
+<script>
+ 
+ function toplama(a,b,c){
+            return a + b + c
+     
+        }
+     var toplam = toplama(50,10,45)
+     
+     alert("toplamları : " + toplam)
+
+</script>    
+
+</body>
+</html>
